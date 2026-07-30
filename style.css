@@ -1219,3 +1219,2558 @@ nav ul{
 }
 
 }
+/* ==========================================================
+   PORTFOLIO CSS - PART 4
+   Dark Mode • Animations • Utilities • Effects
+   ========================================================== */
+
+/* =======================
+   DARK MODE
+======================= */
+
+body.light-mode{
+    background:#f8fafc;
+    color:#0f172a;
+}
+
+body.light-mode header{
+    background:rgba(255,255,255,.9);
+    border-bottom:1px solid #ddd;
+}
+
+body.light-mode nav ul li a{
+    color:#0f172a;
+}
+
+body.light-mode .section-title{
+    color:#0f172a;
+}
+
+body.light-mode #about,
+body.light-mode #projects,
+body.light-mode #contact,
+body.light-mode #achievements{
+    background:#ffffff;
+}
+
+body.light-mode #skills,
+body.light-mode #timeline,
+body.light-mode #certificates{
+    background:#f1f5f9;
+}
+
+body.light-mode .about-card,
+body.light-mode .project-card,
+body.light-mode .certificate-card,
+body.light-mode .achievement-card,
+body.light-mode .timeline-box{
+    background:#ffffff;
+    color:#0f172a;
+    border:1px solid #ddd;
+}
+
+body.light-mode p{
+    color:#334155;
+}
+
+body.light-mode footer{
+    background:#e2e8f0;
+}
+
+/* =======================
+   FADE ANIMATION
+======================= */
+
+.fade-in{
+    animation:fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =======================
+   ZOOM
+======================= */
+
+.zoom{
+
+    animation:zoom 1s ease;
+
+}
+
+@keyframes zoom{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* =======================
+   FLOAT
+======================= */
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =======================
+   GLOW EFFECT
+======================= */
+
+.glow{
+
+box-shadow:
+
+0 0 15px rgba(59,130,246,.5),
+
+0 0 35px rgba(59,130,246,.35),
+
+0 0 60px rgba(59,130,246,.2);
+
+}
+
+/* =======================
+   GLASSMORPHISM
+======================= */
+
+.glass-card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(255,255,255,.1);
+
+border-radius:20px;
+
+}
+
+/* =======================
+   HOVER SCALE
+======================= */
+
+.scale:hover{
+
+transform:scale(1.05);
+
+transition:.3s;
+
+}
+
+/* =======================
+   TEXT GRADIENT
+======================= */
+
+.gradient-text{
+
+background:linear-gradient(90deg,#3b82f6,#06b6d4);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+/* =======================
+   BADGES
+======================= */
+
+.badge{
+
+display:inline-block;
+
+padding:8px 15px;
+
+border-radius:30px;
+
+background:#2563eb;
+
+font-size:14px;
+
+font-weight:600;
+
+margin:5px;
+
+}
+
+/* =======================
+   IMAGE EFFECTS
+======================= */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+.round{
+
+border-radius:50%;
+
+}
+
+.shadow{
+
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+
+}
+
+/* =======================
+   LINKS
+======================= */
+
+a{
+
+transition:.3s;
+
+}
+
+a:hover{
+
+opacity:.9;
+
+}
+
+/* =======================
+   CARDS
+======================= */
+
+.card{
+
+padding:30px;
+
+border-radius:20px;
+
+background:#1e293b;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/* =======================
+   FLEX
+======================= */
+
+.flex{
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:20px;
+
+}
+
+/* =======================
+   GRID
+======================= */
+
+.grid{
+
+display:grid;
+
+gap:30px;
+
+}
+
+/* =======================
+   SPACING
+======================= */
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:50px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:50px;}
+
+.pt-1{padding-top:10px;}
+.pt-2{padding-top:20px;}
+.pt-3{padding-top:30px;}
+.pt-4{padding-top:40px;}
+.pt-5{padding-top:50px;}
+
+.pb-1{padding-bottom:10px;}
+.pb-2{padding-bottom:20px;}
+.pb-3{padding-bottom:30px;}
+.pb-4{padding-bottom:40px;}
+.pb-5{padding-bottom:50px;}
+
+/* =======================
+   TEXT ALIGN
+======================= */
+
+.text-center{
+
+text-align:center;
+
+}
+
+.text-left{
+
+text-align:left;
+
+}
+
+.text-right{
+
+text-align:right;
+
+}
+
+/* =======================
+   COLORS
+======================= */
+
+.primary{
+
+color:#3b82f6;
+
+}
+
+.success{
+
+color:#22c55e;
+
+}
+
+.warning{
+
+color:#facc15;
+
+}
+
+.danger{
+
+color:#ef4444;
+
+}
+
+/* =======================
+   BACKGROUND
+======================= */
+
+.bg-primary{
+
+background:#2563eb;
+
+}
+
+.bg-dark{
+
+background:#0f172a;
+
+}
+
+.bg-light{
+
+background:#f8fafc;
+
+}
+
+/* =======================
+   BORDER RADIUS
+======================= */
+
+.rounded{
+
+border-radius:15px;
+
+}
+
+.rounded-lg{
+
+border-radius:25px;
+
+}
+
+.circle{
+
+border-radius:50%;
+
+}
+
+/* =======================
+   OPACITY
+======================= */
+
+.opacity-50{
+
+opacity:.5;
+
+}
+
+.opacity-75{
+
+opacity:.75;
+
+}
+
+.opacity-100{
+
+opacity:1;
+
+}
+
+/* =======================
+   FINAL FOOTER
+======================= */
+
+footer p{
+
+font-size:15px;
+
+letter-spacing:.5px;
+
+}
+
+/* END OF PART 4 */
+
+/* ==========================================================
+   PORTFOLIO CSS - PART 5
+   Premium Effects • Cursor • Background • Utilities
+   ========================================================== */
+
+/* ==========================
+   ANIMATED BACKGROUND
+========================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at 20% 20%, rgba(59,130,246,.15), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(6,182,212,.12), transparent 30%),
+    radial-gradient(circle at 50% 80%, rgba(139,92,246,.12), transparent 35%);
+    z-index:-2;
+}
+
+/* ==========================
+   GRID BACKGROUND
+========================== */
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+    background-size:50px 50px;
+    z-index:-3;
+}
+
+/* ==========================
+   HERO GLOW
+========================== */
+
+.hero-text h1{
+
+    text-shadow:
+
+    0 0 15px rgba(59,130,246,.35),
+
+    0 0 40px rgba(59,130,246,.25);
+
+}
+
+/* ==========================
+   IMAGE HOVER
+========================== */
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+
+    transition:.5s;
+
+}
+
+/* ==========================
+   BUTTON RIPPLE
+========================== */
+
+.btn,
+.btn2{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.btn::before,
+.btn2::before{
+
+content:"";
+
+position:absolute;
+
+width:0;
+
+height:0;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.3);
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+transition:.5s;
+
+}
+
+.btn:hover::before,
+.btn2:hover::before{
+
+width:300px;
+
+height:300px;
+
+}
+
+/* ==========================
+   CARD SHINE
+========================== */
+
+.about-card::after,
+.project-card::after{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+
+left:-100%;
+
+width:200%;
+
+height:200%;
+
+background:
+
+linear-gradient(
+
+120deg,
+
+transparent,
+
+rgba(255,255,255,.08),
+
+transparent
+
+);
+
+transform:rotate(25deg);
+
+transition:.8s;
+
+pointer-events:none;
+
+}
+
+.about-card:hover::after,
+.project-card:hover::after{
+
+top:100%;
+
+left:100%;
+
+}
+
+/* ==========================
+   SOCIAL ICON ANIMATION
+========================== */
+
+.socials a i{
+
+transition:.4s;
+
+}
+
+.socials a:hover i{
+
+transform:rotate(360deg);
+
+}
+
+/* ==========================
+   SECTION FADE
+========================== */
+
+section{
+
+animation:fadeSection .8s ease;
+
+}
+
+@keyframes fadeSection{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================
+   PROJECT BADGES
+========================== */
+
+.tech-stack span:hover{
+
+background:#3b82f6;
+
+transform:translateY(-3px);
+
+transition:.3s;
+
+}
+
+/* ==========================
+   TIMELINE DOT PULSE
+========================== */
+
+.timeline-box::before{
+
+animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+
+box-shadow:0 0 0 0 rgba(59,130,246,.7);
+
+}
+
+70%{
+
+box-shadow:0 0 0 15px rgba(59,130,246,0);
+
+}
+
+100%{
+
+box-shadow:0 0 0 0 rgba(59,130,246,0);
+
+}
+
+}
+
+/* ==========================
+   INPUT EFFECTS
+========================== */
+
+form input:focus,
+form textarea:focus{
+
+border:2px solid #3b82f6;
+
+box-shadow:0 0 20px rgba(59,130,246,.3);
+
+}
+
+/* ==========================
+   SCROLL INDICATOR
+========================== */
+
+.scroll-indicator{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+background:#3b82f6;
+
+width:0;
+
+z-index:99999;
+
+}
+
+/* ==========================
+   CUSTOM SELECTION
+========================== */
+
+::selection{
+
+background:#2563eb;
+
+color:#fff;
+
+}
+
+/* ==========================
+   IMAGE BORDER ANIMATION
+========================== */
+
+.hero-image{
+
+position:relative;
+
+}
+
+.hero-image::before{
+
+content:"";
+
+position:absolute;
+
+width:430px;
+
+height:430px;
+
+border-radius:50%;
+
+border:2px dashed rgba(59,130,246,.35);
+
+animation:rotateBorder 20s linear infinite;
+
+}
+
+@keyframes rotateBorder{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ==========================
+   FLOATING ICONS
+========================== */
+
+.float-icon{
+
+position:absolute;
+
+font-size:35px;
+
+color:rgba(59,130,246,.3);
+
+animation:floatIcon 6s ease-in-out infinite;
+
+}
+
+@keyframes floatIcon{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-20px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================
+   UTILITY CLASSES
+========================== */
+
+.w-100{width:100%;}
+.h-100{height:100%;}
+
+.d-flex{display:flex;}
+.d-grid{display:grid;}
+
+.justify-center{justify-content:center;}
+.align-center{align-items:center;}
+
+.gap-10{gap:10px;}
+.gap-20{gap:20px;}
+.gap-30{gap:30px;}
+
+.fw-bold{font-weight:700;}
+.fw-medium{font-weight:500;}
+
+.fs-14{font-size:14px;}
+.fs-16{font-size:16px;}
+.fs-18{font-size:18px;}
+.fs-20{font-size:20px;}
+.fs-24{font-size:24px;}
+
+.text-primary{color:#3b82f6;}
+.text-white{color:#fff;}
+.text-gray{color:#94a3b8;}
+
+.bg-glass{
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(12px);
+}
+
+/* ==========================
+   FOOTER LINKS
+========================== */
+
+footer a{
+    color:#cbd5e1;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:#3b82f6;
+}
+
+/* ==========================
+   END OF PART 5
+========================== */
+/* ==========================================================
+   PORTFOLIO CSS - PART 6
+   Advanced Responsive Design • Accessibility • Final Polish
+   ========================================================== */
+
+
+/* ==========================
+   LARGE SCREEN OPTIMIZATION
+========================== */
+
+@media(min-width:1400px){
+
+    .hero{
+        padding-left:12%;
+        padding-right:12%;
+    }
+
+    .hero-text h1{
+        font-size:70px;
+    }
+
+    .hero-image img{
+        width:450px;
+        height:450px;
+    }
+
+    section{
+        padding-left:12%;
+        padding-right:12%;
+    }
+
+}
+
+
+/* ==========================
+   LAPTOP RESPONSIVE
+========================== */
+
+@media(max-width:1200px){
+
+    header{
+
+        padding:0 5%;
+
+    }
+
+
+    .hero{
+
+        gap:40px;
+
+    }
+
+
+    .hero-text h1{
+
+        font-size:50px;
+
+    }
+
+
+    .hero-text h2{
+
+        font-size:30px;
+
+    }
+
+
+    .hero-image img{
+
+        width:350px;
+
+        height:350px;
+
+    }
+
+
+    .section-title{
+
+        font-size:38px;
+
+    }
+
+}
+
+
+/* ==========================
+   TABLET NAVIGATION
+========================== */
+
+@media(max-width:900px){
+
+
+    header{
+
+        height:auto;
+
+        padding:20px 5%;
+
+    }
+
+
+    nav ul{
+
+        gap:20px;
+
+    }
+
+
+    nav ul li a{
+
+        font-size:15px;
+
+    }
+
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding-top:150px;
+
+    }
+
+
+    .hero-text p{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .hero-image{
+
+        order:-1;
+
+    }
+
+
+    .timeline-box{
+
+        width:85%;
+
+        left:15% !important;
+
+    }
+
+}
+
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media(max-width:600px){
+
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+
+    header{
+
+        position:absolute;
+
+    }
+
+
+    .logo h2{
+
+        font-size:24px;
+
+    }
+
+
+    nav ul{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:15px;
+
+    }
+
+
+    .hero{
+
+        padding:130px 5% 60px;
+
+    }
+
+
+    .hero-text h1{
+
+        font-size:34px;
+
+    }
+
+
+    .hero-text h2{
+
+        font-size:22px;
+
+    }
+
+
+    .hero-text h3{
+
+        font-size:18px;
+
+    }
+
+
+    .hero-text p{
+
+        font-size:15px;
+
+    }
+
+
+    .hero-image img{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+
+    .hero-image::before{
+
+        width:250px;
+
+        height:250px;
+
+    }
+
+
+    .buttons{
+
+        width:100%;
+
+    }
+
+
+    .btn,
+    .btn2{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+
+    .section-title{
+
+        font-size:30px;
+
+    }
+
+
+    .about-card{
+
+        padding:25px;
+
+    }
+
+
+    .project-card{
+
+        margin-bottom:20px;
+
+    }
+
+
+    .timeline::before{
+
+        left:10px;
+
+    }
+
+
+    .timeline-box{
+
+        width:90%;
+
+        left:35px !important;
+
+        padding:20px;
+
+    }
+
+
+    .timeline-box::before{
+
+        left:-35px !important;
+
+    }
+
+
+    form input,
+    form textarea{
+
+        padding:15px;
+
+    }
+
+
+    footer{
+
+        padding:30px 15px;
+
+    }
+
+}
+
+
+/* ==========================
+   EXTRA SMALL DEVICES
+========================== */
+
+@media(max-width:380px){
+
+
+    .hero-text h1{
+
+        font-size:28px;
+
+    }
+
+
+    .hero-image img{
+
+        width:180px;
+
+        height:180px;
+
+    }
+
+
+    .section-title{
+
+        font-size:26px;
+
+    }
+
+
+    .socials a{
+
+        width:45px;
+
+        height:45px;
+
+    }
+
+}
+
+
+/* ==========================
+   ACCESSIBILITY
+========================== */
+
+
+/* Keyboard Focus */
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus{
+
+    outline:3px solid #38bdf8;
+
+    outline-offset:3px;
+
+}
+
+
+/* Reduced Motion Support */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:0.01ms!important;
+
+        animation-iteration-count:1!important;
+
+        transition-duration:0.01ms!important;
+
+        scroll-behavior:auto!important;
+
+    }
+
+}
+
+
+/* ==========================
+   PRINT RESUME MODE
+========================== */
+
+@media print{
+
+
+    header,
+    footer,
+    #darkMode,
+    .buttons{
+
+        display:none;
+
+    }
+
+
+    body{
+
+        background:white;
+
+        color:black;
+
+    }
+
+
+    section{
+
+        page-break-inside:avoid;
+
+    }
+
+
+}
+
+
+/* ==========================
+   PREMIUM CARD EFFECT
+========================== */
+
+
+.premium-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.premium-card:hover{
+
+    transform:translateY(-15px);
+
+    transition:.5s;
+
+}
+
+
+.premium-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+    45deg,
+
+    transparent,
+
+    rgba(59,130,246,.2),
+
+    transparent
+
+    );
+
+    transform:translateX(-100%);
+
+    transition:.7s;
+
+}
+
+
+.premium-card:hover::before{
+
+    transform:translateX(100%);
+
+}
+
+
+/* ==========================
+   LOADING TEXT ANIMATION
+========================== */
+
+
+#loader h2{
+
+    animation:
+
+    loadingText 2s infinite;
+
+}
+
+
+@keyframes loadingText{
+
+
+    0%{
+
+        opacity:.4;
+
+    }
+
+
+    50%{
+
+        opacity:1;
+
+    }
+
+
+    100%{
+
+        opacity:.4;
+
+    }
+
+}
+
+
+/* ==========================
+   FINAL POLISH
+========================== */
+
+
+button{
+
+    font-family:inherit;
+
+}
+
+
+input::placeholder,
+textarea::placeholder{
+
+    color:#94a3b8;
+
+}
+
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+.hidden{
+
+    display:none;
+
+}
+
+
+.visible{
+
+    display:block;
+
+}
+
+
+/* END OF PART 6 */
+/* ==========================================================
+   PORTFOLIO CSS - PART 7
+   Final Visual Effects • Cursor • Particles • Navbar Polish
+   ========================================================== */
+
+
+/* ==========================
+   MOBILE MENU SUPPORT
+========================== */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:28px;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+@media(max-width:768px){
+
+    .menu-toggle{
+
+        display:block;
+
+    }
+
+
+    nav{
+
+        width:100%;
+
+    }
+
+
+    nav ul{
+
+        display:none;
+
+        background:#0f172a;
+
+        padding:20px;
+
+        border-radius:15px;
+
+    }
+
+
+    nav ul.active{
+
+        display:flex;
+
+    }
+
+}
+
+
+/* ==========================
+   CURSOR EFFECT
+========================== */
+
+.cursor{
+
+    position:fixed;
+
+    width:25px;
+
+    height:25px;
+
+    border-radius:50%;
+
+    border:2px solid #3b82f6;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:99999;
+
+    transition:.1s ease;
+
+}
+
+
+.cursor-dot{
+
+    position:fixed;
+
+    width:8px;
+
+    height:8px;
+
+    background:#3b82f6;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:100000;
+
+}
+
+
+/* Cursor Hover */
+
+.cursor.active{
+
+    width:45px;
+
+    height:45px;
+
+    background:rgba(59,130,246,.15);
+
+}
+
+
+
+/* ==========================
+   PARTICLE CONTAINER
+========================== */
+
+#particles{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    overflow:hidden;
+
+    z-index:-1;
+
+}
+
+
+
+.particle{
+
+    position:absolute;
+
+    width:8px;
+
+    height:8px;
+
+    background:#3b82f6;
+
+    border-radius:50%;
+
+    opacity:.4;
+
+    animation:particleMove linear infinite;
+
+}
+
+
+
+@keyframes particleMove{
+
+
+    from{
+
+        transform:
+
+        translateY(100vh)
+
+        rotate(0deg);
+
+    }
+
+
+    to{
+
+        transform:
+
+        translateY(-10vh)
+
+        rotate(360deg);
+
+    }
+
+
+}
+
+
+
+/* ==========================
+   HERO DECORATION SHAPES
+========================== */
+
+
+.shape{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(1px);
+
+    opacity:.3;
+
+}
+
+
+
+.shape-one{
+
+    width:200px;
+
+    height:200px;
+
+    background:#2563eb;
+
+    top:20%;
+
+    left:-80px;
+
+    animation:moveShape 8s infinite alternate;
+
+}
+
+
+
+.shape-two{
+
+    width:250px;
+
+    height:250px;
+
+    background:#06b6d4;
+
+    right:-100px;
+
+    bottom:20%;
+
+    animation:moveShape 10s infinite alternate;
+
+}
+
+
+
+@keyframes moveShape{
+
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        transform:translateY(50px);
+
+    }
+
+}
+
+
+
+/* ==========================
+   NAVBAR SCROLL EFFECT
+========================== */
+
+
+header.scrolled{
+
+    background:rgba(2,6,23,.95);
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.4);
+
+}
+
+
+
+/* ==========================
+   ACTIVE NAV LINK
+========================== */
+
+
+nav a.active{
+
+    color:#3b82f6;
+
+}
+
+
+nav a.active::after{
+
+    width:100%;
+
+}
+
+
+
+/* ==========================
+   TYPING TEXT
+========================== */
+
+
+#typing{
+
+    color:#38bdf8;
+
+    font-weight:600;
+
+}
+
+
+.typed-cursor{
+
+    color:#3b82f6;
+
+    font-size:35px;
+
+}
+
+
+
+/* ==========================
+   PROJECT IMAGE OVERLAY
+========================== */
+
+
+.project-card{
+
+    overflow:hidden;
+
+}
+
+
+
+.project-card img{
+
+    transition:.6s;
+
+}
+
+
+
+.project-card:hover img{
+
+    transform:
+
+    scale(1.15)
+
+    rotate(2deg);
+
+}
+
+
+
+/* ==========================
+   GLASS NAV
+========================== */
+
+
+.glass-nav{
+
+    background:
+
+    rgba(255,255,255,.08);
+
+    backdrop-filter:
+
+    blur(20px);
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+}
+
+
+
+/* ==========================
+   NEON BUTTON EFFECT
+========================== */
+
+
+.neon-btn{
+
+    color:white;
+
+    border:2px solid #3b82f6;
+
+    box-shadow:
+
+    0 0 10px #3b82f6,
+
+    inset 0 0 10px rgba(59,130,246,.3);
+
+    transition:.4s;
+
+}
+
+
+
+.neon-btn:hover{
+
+    box-shadow:
+
+    0 0 30px #3b82f6,
+
+    0 0 60px #3b82f6;
+
+}
+
+
+
+/* ==========================
+   COUNTER ANIMATION
+========================== */
+
+
+.counter{
+
+    font-size:50px;
+
+    font-weight:700;
+
+    color:#3b82f6;
+
+}
+
+
+
+/* ==========================
+   SKILL ICONS
+========================== */
+
+
+.skill-icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#1e293b;
+
+    font-size:30px;
+
+    transition:.4s;
+
+}
+
+
+
+.skill-icon:hover{
+
+    background:#2563eb;
+
+    transform:
+
+    rotate(360deg);
+
+}
+
+
+
+/* ==========================
+   BACK TO TOP ANIMATION
+========================== */
+
+
+#topBtn.show{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    animation:
+
+    bounce .8s;
+
+}
+
+
+
+@keyframes bounce{
+
+
+0%{
+
+transform:translateY(20px);
+
+opacity:0;
+
+}
+
+
+100%{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+/* ==========================
+   SMOOTH PAGE TRANSITION
+========================== */
+
+
+.page-transition{
+
+    animation:
+
+    pageLoad .8s ease;
+
+}
+
+
+
+@keyframes pageLoad{
+
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+}
+
+
+/* ==========================
+   END OF PART 7
+========================== */
+/* ==========================================================
+   PORTFOLIO CSS - PART 8
+   Final Utilities • Compatibility • Performance Polish
+   ========================================================== */
+
+
+/* ==========================
+   BROWSER COMPATIBILITY
+========================== */
+
+*,
+*::before,
+*::after{
+
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+
+}
+
+
+img{
+
+    -webkit-user-drag:none;
+
+    user-select:none;
+
+}
+
+
+
+/* ==========================
+   SMOOTH TRANSITIONS
+========================== */
+
+
+.transition{
+
+    transition:all .4s ease;
+
+}
+
+
+.transition-fast{
+
+    transition:all .2s ease;
+
+}
+
+
+.transition-slow{
+
+    transition:all .8s ease;
+
+}
+
+
+
+/* ==========================
+   OPACITY UTILITIES
+========================== */
+
+
+.opacity-0{
+
+    opacity:0;
+
+}
+
+
+.opacity-25{
+
+    opacity:.25;
+
+}
+
+
+.opacity-50{
+
+    opacity:.5;
+
+}
+
+
+.opacity-75{
+
+    opacity:.75;
+
+}
+
+
+.opacity-100{
+
+    opacity:1;
+
+}
+
+
+
+/* ==========================
+   DISPLAY UTILITIES
+========================== */
+
+
+.block{
+
+    display:block;
+
+}
+
+
+.inline{
+
+    display:inline;
+
+}
+
+
+.inline-block{
+
+    display:inline-block;
+
+}
+
+
+.none{
+
+    display:none;
+
+}
+
+
+
+/* ==========================
+   POSITION UTILITIES
+========================== */
+
+
+.relative{
+
+    position:relative;
+
+}
+
+
+.absolute{
+
+    position:absolute;
+
+}
+
+
+.fixed{
+
+    position:fixed;
+
+}
+
+
+
+/* ==========================
+   FLEX UTILITIES
+========================== */
+
+
+.flex-row{
+
+    flex-direction:row;
+
+}
+
+
+.flex-column{
+
+    flex-direction:column;
+
+}
+
+
+.flex-wrap{
+
+    flex-wrap:wrap;
+
+}
+
+
+.space-between{
+
+    justify-content:space-between;
+
+}
+
+
+.space-around{
+
+    justify-content:space-around;
+
+}
+
+
+
+/* ==========================
+   SHADOW EFFECTS
+========================== */
+
+
+.shadow-sm{
+
+    box-shadow:
+
+    0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+.shadow-md{
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.25);
+
+}
+
+
+.shadow-lg{
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35);
+
+}
+
+
+
+/* ==========================
+   BORDER UTILITIES
+========================== */
+
+
+.border{
+
+    border:1px solid rgba(255,255,255,.1);
+
+}
+
+
+.border-primary{
+
+    border:2px solid #3b82f6;
+
+}
+
+
+.no-border{
+
+    border:none;
+
+}
+
+
+
+/* ==========================
+   BACKGROUND BLUR
+========================== */
+
+
+.blur{
+
+    backdrop-filter:blur(15px);
+
+    -webkit-backdrop-filter:blur(15px);
+
+}
+
+
+
+/* ==========================
+   TEXT EFFECTS
+========================== */
+
+
+.uppercase{
+
+    text-transform:uppercase;
+
+}
+
+
+.capitalize{
+
+    text-transform:capitalize;
+
+}
+
+
+.letter-spacing{
+
+    letter-spacing:2px;
+
+}
+
+
+.text-shadow{
+
+    text-shadow:
+
+    0 5px 20px rgba(0,0,0,.4);
+
+}
+
+
+
+/* ==========================
+   LOADING SKELETON
+========================== */
+
+
+.skeleton{
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #1e293b,
+
+    #334155,
+
+    #1e293b
+
+    );
+
+    background-size:200%;
+
+    animation:
+
+    skeleton 1.5s infinite;
+
+}
+
+
+
+@keyframes skeleton{
+
+
+0%{
+
+background-position:-200%;
+
+}
+
+
+100%{
+
+background-position:200%;
+
+}
+
+
+}
+
+
+
+/* ==========================
+   NOTIFICATION BOX
+========================== */
+
+
+.notification{
+
+    position:fixed;
+
+    top:100px;
+
+    right:30px;
+
+    padding:18px 25px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:15px;
+
+    z-index:9999;
+
+    animation:
+
+    slideIn .5s ease;
+
+}
+
+
+
+@keyframes slideIn{
+
+
+from{
+
+transform:translateX(200px);
+
+opacity:0;
+
+}
+
+
+to{
+
+transform:translateX(0);
+
+opacity:1;
+
+}
+
+
+}
+
+
+
+/* ==========================
+   RESPONSIVE IMAGE FIX
+========================== */
+
+
+.responsive-img{
+
+    width:100%;
+
+    height:auto;
+
+    object-fit:cover;
+
+}
+
+
+
+/* ==========================
+   PERFORMANCE OPTIMIZATION
+========================== */
+
+
+.hero-image img,
+.project-card,
+.about-card,
+.timeline-box{
+
+    will-change:transform;
+
+}
+
+
+
+/* ==========================
+   HIDE SCROLLBAR
+========================== */
+
+
+.hide-scrollbar{
+
+    scrollbar-width:none;
+
+}
+
+
+
+.hide-scrollbar::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+
+
+/* ==========================
+   FINAL BODY SETTINGS
+========================== */
+
+
+body{
+
+    min-height:100vh;
+
+    transition:
+
+    background .4s ease,
+
+    color .4s ease;
+
+}
+
+
+
+/* ==========================
+   END OF COMPLETE STYLE.CSS
+========================== */
